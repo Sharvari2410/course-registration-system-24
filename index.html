@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration System</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script> <!-- Added JS file -->
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Course Registration System</h1>
+      <p>Register for your favorite courses today!</p>
+    </header>
+
+    <section class="student-form">
+      <h2>Student Information</h2>
+      <form id="student-form">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="tel" id="phone" placeholder="Phone Number" required>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="courses">
+      <h2>Available Courses</h2>
+      <div class="course-grid">
+        <div class="course-card">
+          <h3>Java</h3>
+          <p>Learn the basics of Java programming.</p>
+          <button class="register-btn" onclick="registerCourse('Java')">Register</button>
+        </div>
+        <div class="course-card">
+          <h3>C and C++</h3>
+          <p>Understand core programming languages.</p>
+          <button class="register-btn" onclick="registerCourse('C and C++')">Register</button>
+        </div>
+        <div class="course-card">
+          <h3>Python</h3>
+          <p>Master one of the most popular languages.</p>
+          <button class="register-btn" onclick="registerCourse('Python')">Register</button>
+        </div>
+        <div class="course-card">
+          <h3>Data Science</h3>
+          <p>Analyze and interpret complex data.</p>
+          <button class="register-btn" onclick="registerCourse('Data Science')">Register</button>
+        </div>
+        <div class="course-card">
+          <h3>Machine Learning</h3>
+          <p>Explore AI and automation techniques.</p>
+          <button class="register-btn" onclick="registerCourse('Machine Learning')">Register</button>
+        </div>
+        <div class="course-card">
+          <h3>Artificial Intelligence</h3>
+          <p>Dive into the world of AI.</p>
+          <button class="register-btn" onclick="registerCourse('Artificial Intelligence')">Register</button>
+        </div>
+        <div class="course-card">
+          <h3>Calculus</h3>
+          <p>Master advanced math for engineering.</p>
+          <button class="register-btn" onclick="registerCourse('Calculus')">Register</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="registration-status">
+      <h2>Registration Status</h2>
+      <div id="student-info">
+        <p>Fill out the form above to register for a course!</p>
+      </div>
+      <div id="courses-registered">
+        <h3>Registered Courses:</h3>
+        <ul id="courses-list">
+          <!-- Dynamic course list will be displayed here -->
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
